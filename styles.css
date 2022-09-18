@@ -73,7 +73,7 @@ fieldset legend {
 }
 
 input[type="text"]:first-child {
-    margin-top: none;
+    margin-top: 0;
 }
 
 input[type="text"],
@@ -188,7 +188,7 @@ input[type="submit"] {
     padding: 21px;
     width: 100%;
     margin: 28px auto 30px auto !important;
-    text-align: 100%;
+    text-align: center;
     transition: all 0.1s ease-in;
     border: 2px solid #4ebbb500;
 }
