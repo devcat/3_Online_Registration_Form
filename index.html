@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<head>
+    <div id="head">
+        <h1>The Code Review</h1>
+        <div id="subhead">
+            <h2>Signup for our newsletter</h2>
+            <p>Get the latest news on how your code is doing right in your inbox</p>
+        </div>
+    </div>
+</head>
+<main id="main">
+    <form>
+        <fieldset id="contact-info">
+            <legend>Contact information</legend>
+            
+            <div class="question">
+                <label>Full Name</label><br>
+                <input type="text" id="name" name="Name" autocomplete="name" placeholder="Required" required><br>
+            </div>
+
+            <div class="question">
+                <label>Email Address</label><br>
+                <input type="email" id="email" name="Email" autocomplete="email" placeholder="Required" required><br>
+            </div>
+
+            <div class="question">
+                <label>Phone Number</label><br>
+                <input type="tel" id="tel" name="Phone" autocomplete="tel"><br>
+            </div>
+            
+            <div class="question">
+                <label>Street Address</label><br>
+                <input type="text" id="address" name="Address" autocomplete="address-level1"><br>
+            </div>
+            
+            <div class="question">
+                <label for="city">City</label><br>
+                <input type="text" id="city" name="City"><br>
+            </div>
+
+            <div class="question">
+                <label>State</label>
+                <select id="state" name="state">
+                    <option value="" disabled selected hidden>Choose State</option>
+                    <option value="AL">Alabama</option>
+                    <option value="AK">Alaska</option>
+                    <option value="AZ">Arizona</option>
+                    <option value="AR">Arkansas</option>
+                    <option value="CA">California</option>
+                    <option value="CO">Colorado</option>
+                    <option value="CT">Connecticut</option>
+                    <option value="DE">Delaware</option>
+                    <option value="DC">District Of Columbia</option>
+                    <option value="FL">Florida</option>
+                    <option value="GA">Georgia</option>
+                    <option value="HI">Hawaii</option>
+                    <option value="ID">Idaho</option>
+                    <option value="IL">Illinois</option>
+                    <option value="IN">Indiana</option>
+                    <option value="IA">Iowa</option>
+                    <option value="KS">Kansas</option>
+                    <option value="KY">Kentucky</option>
+                    <option value="LA">Louisiana</option>
+                    <option value="ME">Maine</option>
+                    <option value="MD">Maryland</option>
+                    <option value="MA">Massachusetts</option>
+                    <option value="MI">Michigan</option>
+                    <option value="MN">Minnesota</option>
+                    <option value="MS">Mississippi</option>
+                    <option value="MO">Missouri</option>
+                    <option value="MT">Montana</option>
+                    <option value="NE">Nebraska</option>
+                    <option value="NV">Nevada</option>
+                    <option value="NH">New Hampshire</option>
+                    <option value="NJ">New Jersey</option>
+                    <option value="NM">New Mexico</option>
+                    <option value="NY">New York</option>
+                    <option value="NC">North Carolina</option>
+                    <option value="ND">North Dakota</option>
+                    <option value="OH">Ohio</option>
+                    <option value="OK">Oklahoma</option>
+                    <option value="OR">Oregon</option>
+                    <option value="PA">Pennsylvania</option>
+                    <option value="RI">Rhode Island</option>
+                    <option value="SC">South Carolina</option>
+                    <option value="SD">South Dakota</option>
+                    <option value="TN">Tennessee</option>
+                    <option value="TX">Texas</option>
+                    <option value="UT">Utah</option>
+                    <option value="VT">Vermont</option>
+                    <option value="VA">Virginia</option>
+                    <option value="WA">Washington</option>
+                    <option value="WV">West Virginia</option>
+                    <option value="WI">Wisconsin</option>
+                    <option value="WY">Wyoming</option>
+                </select>
+            </div>
+
+            <div class="zip">
+                <label for="zip">Zip</label><br>
+                <input class="zip" type="text" id="zip" name="Zip"><br>
+            </div>
+        </fieldset>
+        
+        <div class="divider"></div>
+
+        <fieldset id="newsletter">
+            <legend>Newsletter</legend>
+            <div id="newsletter-questions">
+                <p>Select the newsletters you would like to receive</p>
+                
+                <div class="selection">
+                    <input type="checkbox" id="HTML-News" name="newsletter-questions" value="HTML-News"><label for="HTML-News">HTML News</label><br>
+                </div>
+                
+                <div class="selection">
+                    <input type="checkbox" id="CSS-News" name="newsletter-questions" value="CSS-News"><label for="CSS-News">CSS News</label><br>
+                </div>
+                
+                <div class="selection">
+                    <input type="checkbox" id="Javascript-News" name="newsletter-questions" value="Javascript-News"><label for="Javascript-News">Javascript News</label>
+                </div>
+            </div>
+            <div id="newsletter-format">
+                <p>Newsletter format</p>
+                
+                <div class="selection">
+                    <input type="radio" id="html" name="newsletter-format" value="html"><label for="html">HTML</label><br>
+                </div>
+                
+                <div class="selection">
+                    <input type="radio" id="plain-text" name="newsletter-format" value="plain-text"><label for="plain-text">Plain text</label><br>
+                </div>
+            </div>
+            <label for="other-topics">Other topics you'd like to hear about</label><br><textarea id="other-topics" name="other-topics"></textarea>
+        </fieldset>
+        <input type="submit" value="Sign Up" method="post">
+        <p class="footer-text">Copyright The Code Review</p>
+    </form>
+</main>
+
+</body>
+</html>
